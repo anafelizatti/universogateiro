@@ -1,0 +1,11 @@
+ <% if @posts.nil? %>
+    <div class="alert alert-info mt-3" role="alert">Nenhum tópico no fórum.</div>
+  <% else %>
+    <% @posts.each do |post| %>
+      <p><%= post.title %></p>
+      <p>Publicado em:</p>
+      <% time_ago_in_words(post.created_at) %> 
+      <p><%= post.user.email%></p>
+    <% end %>
+<% end %><hr>
+<%= link_to "New Post", new_post_path %>
