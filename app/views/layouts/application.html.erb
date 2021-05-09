@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Universo Gateiro</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+  </head>
+
+<div class="container">
+  <body>
+    <%= image_tag "bar.png" %>
+   <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <div class="container-fluid">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+              <a class="nav-link" href="#">Fórum</a>
+              <a class="nav-link" href="#">Produtos</a>
+              <a class="nav-link" href="#">Indicaí</a>
+              <a class="nav-link" href="#">Curiosicats</a>
+              <a class="nav-link" href="#">ONGs - Adore ou Ajude um miau!</a>
+            </div>
+          </div>
+      </div>
+    </nav>
+</div>
+    <div class="container">
+      <%= yield %>
+    </div>
+
+  </body>
+
+</html>
