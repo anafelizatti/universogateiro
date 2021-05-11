@@ -1,6 +1,7 @@
 Regra de negócio : somente o usuário criador ou adm pode editar ou deletar um fórum 
 Alterar cor das box - nav bar e cards
 Inserir comentários para fórum
-Arrumar o desing de tudo
+Arrumar o desing de post
+  index ; show ; edit ; delete
 Testes
 botão voltar show de posts

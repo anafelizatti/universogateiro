@@ -1,13 +1,19 @@
-<% if @posts.nil? %>
-    <div class="alert alert-info mt-3" role="alert">Nenhum tópico no fórum.</div>
-  <% else %>
-    <% @posts.each do |post| %>
-      <p>Tópico:</p>
-      <p><%= link_to post.title, post %></p>
-      <p>Publicado em:</p>
-      <%= time_ago_in_words(post.created_at) %> 
-      <p>Autor</p>
-      <p><%= post.user.email%></p>
-    <% end %>
-<% end %><hr>
-<%= link_to "New Post", new_post_path %>
+<p>
+<center><h4 style="font-family:fantasy;">Fórum - Universo Gateiro</h4></center>
+<hr>
+<div class = 'container'>
+  <% if @posts.nil? %>
+      <div class="alert alert-info mt-3" role="alert">Nenhum tópico no fórum.</div>
+    <% else %>
+      <p>
+      <% @posts.each do |post| %>
+        <p style="font-family:courier;">Título:
+        <h7 style="font-family:courier;"><%= link_to post.title.upcase, post %></p></h7>
+        <p style="font-family:courier; font-size:80%;">Publicado há
+        <%= time_ago_in_words(post.created_at) %> 
+        <i>por <%= post.user.email%></i>
+        <hr>
+      <% end %>
+  <% end %>
+</div>
+<p style="font-family:sans-serif; font-size:90%"><%= link_to "Novo Tópico", new_post_path %>
