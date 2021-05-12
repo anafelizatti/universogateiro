@@ -1,0 +1,20 @@
+%p
+%center
+  %h4{:style => "font-family:fantasy;"} Fórum - Universo Gateiro
+%hr/
+.container
+  - if @posts.nil?
+    .alert.alert-info.mt-3{:role => "alert"} Nenhum tópico no fórum.
+  - else
+    %p
+      - @posts.each do |post|
+        %p{:style => "font-family:courier;"}
+          Título:
+          %h7{:style => "font-family:courier;"}= link_to post.title.upcase, post
+        %p{:style => "font-family:courier; font-size:80%;"}
+          Publicado há
+          \#{time_ago_in_words(post.created_at)}
+          %i
+            por #{post.user.email}
+        %hr/
+%p{:style => "font-family:sans-serif; font-size:90%"}= link_to "Novo Tópico", new_post_path
