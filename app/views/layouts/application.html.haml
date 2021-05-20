@@ -1,0 +1,34 @@
+!!!
+%html
+  %head
+    %meta{content: "text/html; charset=UTF-8", "http-equiv" => "Content-Type"}/
+    %title Universo Gateiro
+    %meta{content: "width=device-width,initial-scale=1", name: "viewport"}/
+    = csrf_meta_tags
+    = csp_meta_tag
+    %link{href: "https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css", rel: "stylesheet"}/
+    %link{href: "https://fonts.googleapis.com/css?family=Lato", rel: "stylesheet", "type:" => ""}/
+    %link{rel: "http://cdnjs.cloudflare.com/ajax/libs/normalize/3.0.1/normalize.min.css"}/
+    = stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload'
+    = javascript_pack_tag 'application', 'data-turbolinks-track': 'reload'
+  %body
+    .container
+      %p.notice= notice
+      %p.alert= alert
+      .wrapper
+        = image_tag "bar.png"
+      .wrapper
+        %nav.navbar.navbar-custom.navbar-expand-lg.navbar-light 
+          .container-fluid
+            %button.navbar-toggler{"aria-controls" => "navbarNavAltMarkup", "aria-expanded" => "false", "aria-label" => "Toggle navigation", "data-bs-target" => "#navbarNavAltMarkup", "data-bs-toggle" => "collapse", type: "button"}
+              %span.navbar-toggler-icon
+            #navbarNavAltMarkup.collapse.navbar-collapse
+              .navbar-nav
+                %a.nav-link.active{"aria-current" => "page", href: "../"} Home
+                %a.nav-link{href: "/posts"} Fórum
+                %a.nav-link{href: "#"} Produtos
+                %a.nav-link{href: "#"} Indicaí
+                %a.nav-link{href: "#"} Curiosicats
+                %a.nav-link{href: "#"} ONGs - Adore ou Ajude um miau!
+    .container
+      = yield

@@ -1,7 +1,15 @@
 Regra de negócio : somente o usuário criador ou adm pode editar ou deletar um fórum 
 Alterar cor das box - nav bar e cards
-Inserir comentários para fórum
+
 Arrumar o desing de post
   show ; edit ; delete
 Testes
 botão voltar show de posts
+-------------------
+Indicaí : cadastro, fotos, descrição, onde encontrou, nota (star rate)
+
+Curiosicats: form de texto normal (crud)
+
+Produtos: cadastro de vendedores * planejar *
+
+ONGS: Cadastro, fotos, história, contato, link para DOAÇÃO (integração ?)
