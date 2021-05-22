@@ -6,7 +6,7 @@ describe 'Visitor' do
   context 'when visit home page' do
     it 'index page' do
       visit root_path
-      expect(current_path).to eq('/')
+      expect(page).to have_current_path('/')
       expect(page).to have_link('Fórum')
       expect(page).to have_link('Produtos')
       expect(page).to have_link('Indicaí')

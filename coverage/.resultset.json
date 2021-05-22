@@ -9,6 +9,8 @@
           1,
           null,
           1,
+          1,
+          1,
           null
         ]
       },
@@ -20,6 +22,18 @@
         ]
       },
       "/home/anafelizatti/projeto/universogateiro/app/helpers/application_helper.rb": {
+        "lines": [
+          1,
+          null
+        ]
+      },
+      "/home/anafelizatti/projeto/universogateiro/app/helpers/comments_helper.rb": {
+        "lines": [
+          1,
+          null
+        ]
+      },
+      "/home/anafelizatti/projeto/universogateiro/app/helpers/indications_helper.rb": {
         "lines": [
           1,
           null
@@ -46,65 +60,12 @@
           null
         ]
       },
-      "/home/anafelizatti/projeto/universogateiro/app/controllers/posts_controller.rb": {
-        "lines": [
-          null,
-          null,
-          1,
-          1,
-          1,
-          null,
-          1,
-          10,
-          null,
-          null,
-          1,
-          null,
-          1,
-          4,
-          null,
-          null,
-          1,
-          4,
-          null,
-          4,
-          4,
-          null,
-          0,
-          null,
-          null,
-          null,
-          1,
-          null,
-          1,
-          1,
-          1,
-          null,
-          0,
-          null,
-          null,
-          null,
-          1,
-          1,
-          1,
-          null,
-          null,
-          1,
-          null,
-          1,
-          11,
-          null,
-          null,
-          1,
-          5,
-          null,
-          null
-        ]
-      },
-      "/home/anafelizatti/projeto/universogateiro/app/models/post.rb": {
+      "/home/anafelizatti/projeto/universogateiro/app/controllers/indications_controller.rb": {
         "lines": [
           1,
+          null,
           1,
+          null,
           null
         ]
       },
@@ -127,8 +88,137 @@
         ],
         "branches": {
         }
+      },
+      "/home/anafelizatti/projeto/universogateiro/app/controllers/comments_controller.rb": {
+        "lines": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          null,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          null,
+          0,
+          0,
+          0,
+          0,
+          null,
+          0,
+          0,
+          0,
+          null,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          null,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "branches": {
+        }
+      },
+      "/home/anafelizatti/projeto/universogateiro/app/controllers/posts_controller.rb": {
+        "lines": [
+          null,
+          null,
+          0,
+          0,
+          0,
+          null,
+          0,
+          0,
+          0,
+          null,
+          0,
+          null,
+          0,
+          0,
+          0,
+          null,
+          0,
+          0,
+          null,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          null,
+          0,
+          null,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          null,
+          0,
+          0,
+          0,
+          0,
+          null,
+          0,
+          null,
+          0,
+          0,
+          0,
+          null,
+          0,
+          0,
+          0,
+          0
+        ],
+        "branches": {
+        }
+      },
+      "/home/anafelizatti/projeto/universogateiro/app/models/comment.rb": {
+        "lines": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "branches": {
+        }
+      },
+      "/home/anafelizatti/projeto/universogateiro/app/models/indication.rb": {
+        "lines": [
+          0,
+          0,
+          0
+        ],
+        "branches": {
+        }
+      },
+      "/home/anafelizatti/projeto/universogateiro/app/models/post.rb": {
+        "lines": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "branches": {
+        }
       }
     },
-    "timestamp": 1620691357
+    "timestamp": 1621709644
   }
 }

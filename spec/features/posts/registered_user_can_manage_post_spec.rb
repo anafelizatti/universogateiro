@@ -17,13 +17,12 @@ context 'when user do registration' do
     visit posts_path
     click_on 'New Post'
 
-    fill_in "Title", with: "Random thing"
-    fill_in "Content", with: "coment on random thing"
+    fill_in 'Title', with: 'Random thing'
+    fill_in 'Content', with: 'coment on random thing'
     click_on 'Create Post'
 
     visit posts_path
     expect(page).to have_link('Random thing')
-
   end
 
   it 'can see options of a post' do
@@ -33,8 +32,8 @@ context 'when user do registration' do
     visit posts_path
     click_on 'New Post'
 
-    fill_in "Title", with: "Random thing"
-    fill_in "Content", with: "coment on random thing"
+    fill_in 'Title', with: 'Random thing'
+    fill_in 'Content', with: 'coment on random thing'
     click_on 'Create Post'
 
     visit posts_path
@@ -52,8 +51,8 @@ context 'when user do registration' do
 
     click_on 'New Post'
 
-    fill_in "Title", with: "Random thing"
-    fill_in "Content", with: "coment on random thing"
+    fill_in 'Title', with: 'Random thing'
+    fill_in 'Content', with: 'coment on random thing'
     click_on 'Create Post'
 
     visit posts_path
@@ -61,7 +60,7 @@ context 'when user do registration' do
 
     click_on 'Random thing'
     click_on 'Edit'
-    fill_in "Title", with: "Edited"
+    fill_in 'Title', with: 'Edited'
     click_on 'Update Post'
     expect(page).to have_content('Edited')
   end
@@ -73,8 +72,8 @@ context 'when user do registration' do
 
     click_on 'New Post'
 
-    fill_in "Title", with: "Random thing"
-    fill_in "Content", with: "coment on random thing"
+    fill_in 'Title', with: 'Random thing'
+    fill_in 'Content', with: 'coment on random thing'
     click_on 'Create Post'
 
     visit posts_path
@@ -82,9 +81,8 @@ context 'when user do registration' do
 
     click_on 'Random thing'
     click_on 'Delete'
-    
-    visit posts_path
-    expect(page).to_not have_content('Random thing')
-  end
 
+    visit posts_path
+    expect(page).not_to have_content('Random thing')
+  end
 end

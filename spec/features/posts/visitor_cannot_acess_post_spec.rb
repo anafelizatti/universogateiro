@@ -7,14 +7,14 @@ describe 'Visitor' do
     it 'from index page' do
       visit root_path
       click_on 'Me leve ao fórum'
-      expect(current_path).to eq('/users/sign_in')
+      expect(page).to have_current_path('/users/sign_in')
       expect(page).to have_content('Sign up')
     end
 
     it 'from nav bar' do
       visit root_path
       click_on 'Fórum'
-      expect(current_path).to eq('/users/sign_in')
+      expect(page).to have_current_path('/users/sign_in')
       expect(page).to have_content('Sign up')
     end
   end
