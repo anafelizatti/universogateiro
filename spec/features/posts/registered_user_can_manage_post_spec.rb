@@ -15,14 +15,14 @@ context 'when user do registration' do
     login_as(user)
 
     visit posts_path
-    click_on 'New Post'
+    click_on 'Novo Tópico'
 
-    fill_in 'Title', with: 'Random thing'
-    fill_in 'Content', with: 'coment on random thing'
-    click_on 'Create Post'
+    fill_in 'Title', with: 'RANDON THING'
+    fill_in 'Content', with: 'coment on RANDON THING'
+    click_on 'Criar'
 
     visit posts_path
-    expect(page).to have_link('Random thing')
+    expect(page).to have_link('RANDON THING')
   end
 
   it 'can see options of a post' do
@@ -30,18 +30,18 @@ context 'when user do registration' do
     login_as(user)
 
     visit posts_path
-    click_on 'New Post'
+    click_on 'Novo Tópico'
 
-    fill_in 'Title', with: 'Random thing'
-    fill_in 'Content', with: 'coment on random thing'
-    click_on 'Create Post'
+    fill_in 'Title', with: 'RANDON THING'
+    fill_in 'Content', with: 'coment on RANDON THING'
+    click_on 'Criar'
 
     visit posts_path
-    expect(page).to have_link('Random thing')
+    expect(page).to have_link('RANDON THING')
 
-    click_on 'Random thing'
-    expect(page).to have_link('Edit')
-    expect(page).to have_link('Delet')
+    click_on 'RANDON THING'
+    expect(page).to have_link('Editar')
+    expect(page).to have_link('Deletar')
   end
 
   it 'can edit a post' do
@@ -49,19 +49,19 @@ context 'when user do registration' do
     login_as(user)
     visit posts_path
 
-    click_on 'New Post'
+    click_on 'Novo Tópico'
 
-    fill_in 'Title', with: 'Random thing'
-    fill_in 'Content', with: 'coment on random thing'
-    click_on 'Create Post'
+    fill_in 'Title', with: 'RANDON THING'
+    fill_in 'Content', with: 'coment on RANDON THING'
+    click_on 'Criar'
 
     visit posts_path
-    expect(page).to have_link('Random thing')
+    expect(page).to have_link('RANDON THING')
 
-    click_on 'Random thing'
-    click_on 'Edit'
+    click_on 'RANDON THING'
+    click_on 'Editar'
     fill_in 'Title', with: 'Edited'
-    click_on 'Update Post'
+    click_on 'Criar'
     expect(page).to have_content('Edited')
   end
 
@@ -70,19 +70,19 @@ context 'when user do registration' do
     login_as(user)
     visit posts_path
 
-    click_on 'New Post'
+    click_on 'Novo Tópico'
 
-    fill_in 'Title', with: 'Random thing'
-    fill_in 'Content', with: 'coment on random thing'
-    click_on 'Create Post'
-
-    visit posts_path
-    expect(page).to have_link('Random thing')
-
-    click_on 'Random thing'
-    click_on 'Delete'
+    fill_in 'Title', with: 'RANDON THING'
+    fill_in 'Content', with: 'coment on RANDON THING'
+    click_on 'Criar'
 
     visit posts_path
-    expect(page).not_to have_content('Random thing')
+    expect(page).to have_link('RANDON THING')
+
+    click_on 'RANDON THING'
+    click_on 'Deletar'
+
+    visit posts_path
+    expect(page).not_to have_content('RANDON THING')
   end
 end
